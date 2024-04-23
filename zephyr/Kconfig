@@ -1,0 +1,6 @@
+# Minimalistic CBOR decoder implementation
+
+config QCBOR
+	bool "QCBOR Support"
+	help
+	  This option enables the QCBOR library.
