@@ -36,6 +36,23 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "qcbor/qcbor_spiffy_decode.h"
 #include "ieee754.h" /* Does not use math.h */
 
+#ifndef FE_INVALID
+#define FE_INVALID 0
+#endif
+
+#ifndef FE_OVERFLOW
+#define FE_OVERFLOW 0
+#endif
+
+#ifndef FE_UNDERFLOW
+#define FE_UNDERFLOW 0
+#endif
+
+#ifndef FE_DIVBYZERO
+#define FE_DIVBYZERO 0
+#endif
+
+
 #ifndef QCBOR_DISABLE_FLOAT_HW_USE
 
 #include <math.h> /* For isnan(), llround(), llroudf(), round(), roundf(),
